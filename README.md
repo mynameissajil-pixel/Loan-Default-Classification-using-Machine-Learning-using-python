@@ -15,7 +15,7 @@ This project builds and compares multiple classification models to predict loan 
 
 ## Dataset
 
-- **Source:** `Loan_default.csv`
+- **Source:** [loan_default.csv](https://github.com/mynameissajil-pixel/Loan-Default-Classification-using-Machine-Learning-using-python/blob/043f8d4822648d3ddbccadd7e8e31e4fafc071da/loan_default.ipynb)
 - **Records:** 43,121 loan records, 18 columns
 - **Features:** Age, Income, Loan Amount, Credit Score, Months Employed, Number of Credit Lines, Interest Rate, Loan Term, DTI Ratio, Education, Employment Type, Marital Status, Has Mortgage, Has Dependents, Loan Purpose, Has Co-Signer
 - **Target variable:** `Default` (binary: 0 = No Default, 1 = Default)

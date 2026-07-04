@@ -42,7 +42,7 @@ This project builds and compares multiple classification models to predict loan 
 ## 📊 Exploratory Data Analysis
 
 ### Correlation Heatmap
-![](https://github.com/mynameissajil-pixel/Loan-Default-Classification-using-Machine-Learning-using-python/blob/38458caa48a2fa3196818f9826267d5292a3deb2/CORRELATION.png)
+![](https://github.com/mynameissajil-pixel/Loan-Default-Classification-using-Machine-Learning-using-python/blob/e32247ddcb8d9f738c1ac1d53a89e38592747b7c/CORRELATION.png)
 
 ### Loan Default Distribution
 ![Default Distribution](screenshots/default-distribution.png)

@@ -45,7 +45,7 @@ This project builds and compares multiple classification models to predict loan 
 ![](https://github.com/mynameissajil-pixel/Loan-Default-Classification-using-Machine-Learning-using-python/blob/e32247ddcb8d9f738c1ac1d53a89e38592747b7c/CORRELATION.png)
 
 ### Class Distribution — Before SMOTE Balancing
-![Before SMOTE](screenshots/before-smote-balancing.png)
+![Before SMOTE](https://github.com/mynameissajil-pixel/Loan-Default-Classification-using-Machine-Learning-using-python/blob/e45c5b646920fe4a74763e1cb000da67cce6a1f8/BEFORE%20SMOTES%20BALANCING.png)
 
 Before balancing, the dataset was imbalanced with 88% non-default (0.0) and 12% default (1.0) cases.
 

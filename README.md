@@ -2,25 +2,25 @@
 
 A machine learning project that predicts whether a borrower will default on a loan, using classification models trained on borrower financial and demographic data.
 
-## 📌 Introduction
+## Introduction
 
 This project builds and compares multiple classification models to predict loan default risk. The goal is to identify borrowers likely to default and uncover the key financial and demographic factors driving that risk, supporting better lending decisions.
 
-## 🎯 Objective
+## Objective
 
 - Build and compare classification models (Logistic Regression, Random Forest, Decision Tree) to predict loan default.
 - Handle class imbalance in the target variable using SMOTE.
 - Identify key risk-driving factors through EDA and correlation analysis.
 - Tune models using GridSearchCV for improved performance.
 
-## 🗂️ Dataset
+## Dataset
 
 - **Source:** `Loan_default.csv`
 - **Records:** 43,121 loan records, 18 columns
 - **Features:** Age, Income, Loan Amount, Credit Score, Months Employed, Number of Credit Lines, Interest Rate, Loan Term, DTI Ratio, Education, Employment Type, Marital Status, Has Mortgage, Has Dependents, Loan Purpose, Has Co-Signer
 - **Target variable:** `Default` (binary: 0 = No Default, 1 = Default)
 
-## 🛠️ Tools & Libraries
+## Tools & Libraries
 
 - **Python**
 - **Pandas, NumPy** — data manipulation
@@ -28,7 +28,7 @@ This project builds and compares multiple classification models to predict loan 
 - **Scikit-learn** — model building, tuning, and evaluation
 - **imbalanced-learn (SMOTE)** — class imbalance handling
 
-## 🔍 Workflow / Methodology
+## Workflow / Methodology
 
 1. **Data Cleaning** — removed missing values and duplicate rows
 2. **EDA** — visualized income distribution, age distribution, marital status vs. default, and feature correlation heatmap
@@ -39,7 +39,7 @@ This project builds and compares multiple classification models to predict loan 
 7. **Hyperparameter Tuning** — GridSearchCV applied to Logistic Regression and Decision Tree
 8. **Evaluation** — accuracy score, confusion matrix, classification report
 
-## 📊 Exploratory Data Analysis
+## Exploratory Data Analysis
 
 ### Correlation Heatmap
 ![](https://github.com/mynameissajil-pixel/Loan-Default-Classification-using-Machine-Learning-using-python/blob/e32247ddcb8d9f738c1ac1d53a89e38592747b7c/CORRELATION.png)
@@ -50,11 +50,11 @@ This project builds and compares multiple classification models to predict loan 
 Before balancing, the dataset was imbalanced with 88% non-default (0.0) and 12% default (1.0) cases.
 
 ### Class Distribution — After SMOTE Balancing
-![After SMOTE](screenshots/after-smote-balancing.png)
+![After SMOTE](https://github.com/mynameissajil-pixel/Loan-Default-Classification-using-Machine-Learning-using-python/blob/6612138382a90ef74a4b769981847714e3360521/AFTERSMOTE%20BALANCING.png)
 
 After applying SMOTE, the training data was balanced to a 50/50 split between default and non-default cases.
 
-## 🤖 Model Training & Results
+## Model Training & Results
 
 ### Logistic Regression
 ```python
@@ -113,33 +113,20 @@ treee.fit(x_train, y_train)
 | Random Forest | 85.61% |
 | Decision Tree | 68.55% |
 
-## 💡 Key Insights
+## Key Insights
 
 - Random Forest achieved the highest test accuracy (85.61%), outperforming both Logistic Regression and Decision Tree.
 - GridSearchCV tuning on Logistic Regression improved cross-validation accuracy to 84.35%, but test accuracy only moved from 80.91% to 80.95% — a marginal real-world gain.
 - Decision Tree (max depth = 5) underperformed significantly (68.55%), suggesting it was too shallow to capture the patterns in this dataset.
 - The original dataset was imbalanced toward non-default cases; SMOTE was used to balance the training data (30,433 records per class) before model training.
 
-## 🎯 Conclusion
+## Conclusion
 
 Random Forest was the best-performing model for predicting loan default in this dataset, offering the highest accuracy among the three approaches tested. While Logistic Regression is simpler and faster to train, Random Forest's ability to capture non-linear relationships between borrower features made it more effective at identifying default risk.
 
-## 📓 Full Notebook
+## Full Notebook
 
 The complete code, outputs, and visualizations are available in the notebook:
 [loan_default.ipynb](https://github.com/mynameissajil-pixel/Loan-Default-Classification-using-Machine-Learning-using-python/blob/043f8d4822648d3ddbccadd7e8e31e4fafc071da/loan_default.ipynb)
 
-## 🚀 How to Run
 
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn
-python loan_default.py
-```
-
-## 📄 License
-
-*[Optional — e.g., "For portfolio/educational purposes only"]*
-
-## 📬 Contact
-
-*[Your name / LinkedIn / email]*

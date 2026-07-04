@@ -44,11 +44,15 @@ This project builds and compares multiple classification models to predict loan 
 ### Correlation Heatmap
 ![](https://github.com/mynameissajil-pixel/Loan-Default-Classification-using-Machine-Learning-using-python/blob/e32247ddcb8d9f738c1ac1d53a89e38592747b7c/CORRELATION.png)
 
-### Loan Default Distribution
-![Default Distribution](screenshots/default-distribution.png)
+### Class Distribution — Before SMOTE Balancing
+![Before SMOTE](screenshots/before-smote-balancing.png)
 
-### Marital Status vs Default
-![Marital Status vs Default](screenshots/marital-status-vs-default.png)
+Before balancing, the dataset was imbalanced with 88% non-default (0.0) and 12% default (1.0) cases.
+
+### Class Distribution — After SMOTE Balancing
+![After SMOTE](screenshots/after-smote-balancing.png)
+
+After applying SMOTE, the training data was balanced to a 50/50 split between default and non-default cases.
 
 ## 🤖 Model Training & Results
 
